@@ -6,9 +6,7 @@
   <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animate.css">
-  <script src="wow.min.js">
-
-  </script>
+  <script src="wow.min.js"></script>
   <title>WOW.js + Animate.CSS</title>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -47,9 +45,22 @@
     </div>
 
     <h3>Название анимации</h3>
-    <img src="images/dog5.jpg" alt="Собака - лучший друг человека">
+    <img class="wow fadeInRight"src="images/dog5.jpg" alt="Собака - лучший друг человека">
     <p><em>(атрибуты)</em></p>
 
   </div>
+
+  <script type="text/javascript">
+  wow = new WOW (
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+    }
+    )
+    wow.init();
+  </script>
 </body>
 </html>
